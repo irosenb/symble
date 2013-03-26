@@ -32,7 +32,7 @@
 
 			$totalTries = $db->query("SELECT SUM(tries) FROM guesses WHERE noun='$noun'");
 
-			//score determined by amount of 
+			//score determined by amount of tries already there
 			$score = (($nounTries + 1)/$totalTries) * 100;
 
 
